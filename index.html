@@ -96,7 +96,7 @@
 
       <!-- Header part Start -->
       <header
-        class="mainHead h-[600px] w-full bg-cover bg-no-repeat mt-6 rounded-2xl flex flex-col items-center justify-center"
+        class="mainHead relative h-[600px] w-full bg-cover bg-no-repeat mt-6 rounded-2xl flex flex-col items-center justify-center"
       >
         <div class="w-[742px] text-center">
           <span
@@ -122,7 +122,7 @@
           <a href="#buy_ticket_container">Buy Ticket</a>
         </button>
 
-        <div class="absolute bottom-0">
+        <div class="absolute -bottom-20">
           <div class="flex gap-12">
             <div
               class="w-[270px] h-[135px] bg-white rounded-3xl border-b-2 border-lime-600 flex justify-evenly items-center"
@@ -180,14 +180,14 @@
       </header>
       <!-- Header part End -->
 
-      <div class="mt-32 absolute">
+      <div class="mt-32">
         <p
           class="text-center text-gray-950 text-4xl capitalize font-bold font-['Raleway']"
         >
           Best offers for you
         </p>
 
-        <div class="flex gap-8 my-6">
+        <div class="flex gap-8 justify-center my-6">
           <div class="w-[570px] h-[220px] bg-yellow-400 rounded-3xl">
             <img
               class="relative -right-[60%]"
@@ -253,9 +253,98 @@
             </div>
           </div>
         </div>
+        <div class="flex justify-center mb-6">
+          <button
+            class="btn hover:bg-lime-600 hover:text-white text-lime-600 h-[65px] px-6 py-5 rounded-xl border border-lime-600 justify-center items-center gap-2.5"
+          >
+            <div class="text-center text-xl font-bold font-['Raleway']">
+              See All Offers
+            </div>
+          </button>
+        </div>
       </div>
     </div>
 
+    <!-- booking system -->
+    <div
+      class="booking-ticket my-8 bg-stone-50 rounded-t-3xl border-t-2 border-lime-600"
+    >
+      <p
+        class="text-center mt-10 mb-4 text-gray-950 text-[40px] font-bold font-['Raleway']"
+      >
+        RideRite Ticketing
+      </p>
+      <p
+        class="w-[736px] mb-4 mx-auto text-center text-gray-950 text-opacity-60 text-lg font-normal font-['Raleway'] leading-[30px]"
+      >
+        Experience the convenience of RideRite Ticketing, where booking bus
+        tickets is as easy as a few clicks, giving you more time to focus on
+        enjoying your travel adventures.
+      </p>
+
+      <div class="w-10/12 mx-auto">
+        <div class="relative min-h-[418px] bg-white rounded-3xl">
+          <img
+            class="absolute h-full right-[20%]"
+            src="./images/info-devider.png"
+            alt=""
+          />
+
+          <div class="grid grid-cols-4 p-10 items-center">
+            <div class="col-span-3">
+
+              <div class="flex items-center justify-between">
+                <div class="flex items-center justify-evenly gap-2">
+                  <img src="./images/bus-logo.png" alt="" />
+                  <div>
+                    <p
+                      class="text-center text-gray-950 text-[32px] font-bold font-['Raleway']"
+                    >
+                      Greenline Paribahan
+                    </p>
+                    <p class="text-gray-950 text-opacity-60 text-lg font-normal font-['Inter']">Coach-03AB_AC ! AC Business</div>
+                    </p>
+                </div>
+                <div class="px-8 py-4 bg-lime-600 bg-opacity-20 rounded-xl flex gap-2">
+                  <img src="./images/seat-green.png" alt="">
+                  <p class="text-lime-600 text-lg font-medium font-['Inter']">40 Seats left</p>
+                </div>
+              </div>
+
+              <div class="w-full mt-4 bg-stone-50 p-10 rounded-3xl">
+                <div class="flex justify-between items-center border-b-2 pb-2 border-dashed border-gray-950 border-opacity-20">
+                  <p class="text-gray-950 text-opacity-60 text-lg font-semibold font-['Raleway']">Route</p>
+                  <p class="text-gray-950 text-opacity-60 text-lg font-semibold font-['Raleway']">Dhaka - Sylhet</p>
+                  
+                </div>
+
+                <div class="flex justify-between items-center  border-b-2 pb-2 border-dashed border-gray-950 border-opacity-20 mt-4">           
+                  <p class="text-gray-950 text-opacity-60 text-lg font-semibold font-['Raleway']">Departure Time</p>
+                  <p class="text-gray-950 text-opacity-60 text-lg font-semibold font-['Raleway']">9:00 AM</p>
+                </div>
+
+                <div class="flex justify-between items-center mt-4">
+                  <div class=" bg-gray-950 bg-opacity-5 rounded-xl px-8 py-4">
+                    <p class="text-gray-950 text-opacity-80 text-base font-medium font-['Inter']">Boarding Point - Laxmipur</p>
+                  </div>
+                  <div class=" bg-gray-950 bg-opacity-5 rounded-xl px-8 py-4">
+                    <p class="text-gray-950 text-opacity-80 text-base font-medium font-['Inter']">Dropping Point - Bogura</p>
+                  </div>
+                  <div class=" bg-gray-950 bg-opacity-5 rounded-xl px-8 py-4">
+                    <p class="text-gray-950 text-opacity-80 text-base font-medium font-['Inter']">Est. Time - 11 Hour</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <img class="mx-auto" src="./images/fare.png" alt="">
+              <div class="text-center"><span class="text-gray-950 text-[32px] font-bold font-['Raleway'] leading-10">550 Taka<br/></span><span class="text-gray-950 text-opacity-60 text-2xl font-semibold font-['Raleway'] leading-10">Per Seat</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Script -->
     <script src="index.js" />
   </body>
