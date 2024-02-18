@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- daisy and tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a class="text-lg">Home</a></li>
+              <li><a class="text-lg">About</a></li>
+              <li><a class="text-lg">Pages</a></li>
+              <li><a class="text-lg">Blog</a></li>
+              <li><a class="text-lg">Contact</a></li>
+            </ul>
+          </div>
+          <p class="HockeyS">
+            <span
+              class="text-neutral-900 text-2xl font-extrabold font-['Manrope']"
+              >Hockey</span
+            ><span class="text-red-500 text-2xl font-extrabold font-['Manrope']"
+              >’</span
+            ><span
+              class="text-neutral-900 text-2xl font-extrabold font-['Manrope']"
+              >s</span
+            >
+          </p>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-red-500 text-lg">Home</a></li>
+            <li><a class="text-lg">About</a></li>
+            <li><a class="text-lg">Pages</a></li>
+            <li><a class="text-lg">Blog</a></li>
+            <li><a class="text-lg">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <img class="mr-4 hidden md:block" src="./images/src.svg" alt="" />
+          <button
+            class="btn text-white text-lg font-bold font-['Manrope'] bg-red-500 px-6 hover:bg-red-700 transition ease-in-out hover:scale-[105%]"
+          >
+            Get Ticket
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- nav bar end -->
+
+    <!-- Script -->
+    <script src="index.js" />
+  </body>
+</html>
