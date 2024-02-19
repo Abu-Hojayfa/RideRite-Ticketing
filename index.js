@@ -70,10 +70,15 @@ function showSit(param) {
 function couponOnDuty() {
   let value = document.getElementById("couponInput").value;
   let gTotal = document.getElementById("grandTotal");
+  let cSection = document.getElementById("couponInputSection");
 
-  if (value.toUpperCase() === "Couple20".toUpperCase())
+  if (value.toUpperCase() === "Couple20".toUpperCase()) {
     gTotal.innerText = clickedButton.length * 550 * 0.8;
+    cSection.classList.add("hidden");
+  }
 
-  if (value.toUpperCase() === "new15".toUpperCase())
+  if (value.toUpperCase() === "new15".toUpperCase()) {
     gTotal.innerText = clickedButton.length * 550 * 0.85;
+    cSection.classList.add("hidden");
+  }
 }
